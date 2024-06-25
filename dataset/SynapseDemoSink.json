@@ -1,0 +1,20 @@
+{
+	"name": "SynapseDemoSink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "file",
+				"folderPath": "output_synapse",
+				"container": "adfdemo"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
